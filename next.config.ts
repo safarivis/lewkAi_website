@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Using server mode for API routes (email capture)
 };
 
 export default nextConfig;

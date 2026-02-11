@@ -1,3 +1,5 @@
+import DownloadForm from './components/DownloadForm';
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -250,7 +252,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 9: Footer / Contact */}
+      {/* Section 9: Download Framework */}
+      <section id="framework" className="py-32 px-6 bg-foreground/[0.02]">
+        <div className="max-w-[680px] mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+            The AI Decision Framework
+          </h2>
+          <p className="text-lg text-secondary mb-8 leading-relaxed">
+            A one-page checklist to evaluate any AI investment before committing resources.
+            Based on our Six Pillars methodology.
+          </p>
+          <DownloadForm />
+        </div>
+      </section>
+
+      {/* Section 10: Footer / Contact */}
       <footer id="contact" className="py-20 px-6 border-t border-border">
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
