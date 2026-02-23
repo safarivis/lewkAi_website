@@ -54,7 +54,9 @@ export default function Home() {
               Start Your AI Journey
             </a>
             <a
-              href="#contact"
+              href="https://calendly.com/louisrdup/needs-assesment-2"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-border rounded-full font-medium hover:border-foreground transition-colors"
             >
               Book Free Consultation
@@ -187,7 +189,9 @@ export default function Home() {
             In uncertain times, you need more than technology. You need a trusted partner who understands both AI and your business&mdash;someone who will listen, recommend honestly, implement expertly, and support you continuously.
           </p>
           <a
-            href="#contact"
+            href="https://calendly.com/louisrdup/needs-assesment-2"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-foreground text-background rounded-full font-medium hover:opacity-90 transition-opacity"
           >
             Book Your Free Consultation
