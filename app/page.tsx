@@ -37,9 +37,6 @@ export default function Home() {
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-8">
             Navigate AI with Confidence
           </h1>
-          <p className="text-xl md:text-2xl text-secondary mb-6 max-w-2xl mx-auto leading-relaxed">
-            The future feels uncertain. AI is transforming business faster than ever&mdash;and you don&apos;t have to figure it out alone.
-          </p>
           <p className="text-lg text-secondary mb-4 max-w-xl mx-auto">
             We&apos;re not just an AI vendor. We&apos;re your long-term implementation partner&mdash;from strategy to support, for businesses of all sizes.
           </p>
@@ -118,6 +115,18 @@ export default function Home() {
               description="Tailored implementations for unique business requirements where off-the-shelf tools fail."
               items={['Bespoke AI models', 'Industry-specific solutions', 'Integration with existing systems', 'Scalable AI infrastructure']}
               outcome="Solve your specific challenges with precision-built solutions"
+            />
+            <ServiceCard
+              title="AI Agents"
+              description="Deploy task-specific AI agents that execute workflows, coordinate tools, and support your team in real time."
+              items={['Lead qualification and follow-up agents', 'Internal operations and support agents', 'Multi-step task orchestration', 'CRM, helpdesk, and tool integrations']}
+              outcome="Increase output, speed up execution, and keep teams focused on higher-value work"
+            />
+            <ServiceCard
+              title="Website Services"
+              description="Build and optimize modern websites that convert visitors and connect seamlessly with your AI and business systems."
+              items={['Website design and development', 'Landing pages and conversion optimization', 'CMS setup and content workflows', 'Analytics, forms, and automation integrations']}
+              outcome="Launch faster, improve conversion rates, and create a stronger digital presence"
             />
           </div>
         </div>
