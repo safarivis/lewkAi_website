@@ -4,7 +4,9 @@ export default function Home() {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <span className="text-xl font-semibold tracking-tight">lewkAi</span>
+          <a href="#" className="inline-flex items-center gap-2.5" aria-label="LewkAI home">
+            <LogoMark />
+          </a>
           <div className="flex items-center gap-6">
             <a
               href="#about"
@@ -213,7 +215,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
             <div>
-              <span className="text-2xl font-semibold tracking-tight">lewkAi</span>
+              <LogoMark />
               <p className="text-secondary mt-2">Cape Town, South Africa</p>
             </div>
             <div className="text-left md:text-right">
@@ -240,12 +242,35 @@ export default function Home() {
               AI Implementation with the Human Touch
             </p>
             <p className="text-sm text-secondary">
-              &copy; {new Date().getFullYear()} lewkAi. All rights reserved.
+              &copy; {new Date().getFullYear()} LewkAI. All rights reserved.
             </p>
           </div>
         </div>
       </footer>
     </div>
+  );
+}
+
+function LogoMark() {
+  return (
+    <span className="inline-flex items-center gap-2.5">
+      <svg width="30" height="30" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="lewkaiLogoGradient" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stopColor="#00ff88" />
+            <stop offset="100%" stopColor="#00ccff" />
+          </linearGradient>
+        </defs>
+        <rect width="100" height="100" rx="17" fill="url(#lewkaiLogoGradient)" />
+        <circle cx="76" cy="24" r="15" fill="var(--background)" />
+      </svg>
+      <span
+        className="text-2xl font-bold tracking-tight leading-none"
+        style={{ fontFamily: "var(--font-space-grotesk)" }}
+      >
+        LewkAI
+      </span>
+    </span>
   );
 }
 
