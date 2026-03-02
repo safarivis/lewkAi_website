@@ -31,7 +31,7 @@ export default function Home() {
       </nav>
 
       {/* Section 1: Hero */}
-      <section className="min-h-screen flex flex-col items-center justify-center px-6 pt-20">
+      <section data-reveal className="min-h-screen flex flex-col items-center justify-center px-6 pt-20">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-sm uppercase tracking-widest text-secondary mb-6">
             Full-Service AI Implementation Partner
@@ -65,7 +65,7 @@ export default function Home() {
       </section>
 
       {/* Section 2: About */}
-      <section id="about" className="py-32 px-6 bg-foreground/[0.02]">
+      <section data-reveal id="about" className="py-32 px-6 bg-foreground/[0.02]">
         <div className="max-w-[680px] mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-8 text-center">
             Who We Are
@@ -85,7 +85,7 @@ export default function Home() {
       </section>
 
       {/* Section 3: Services */}
-      <section id="services" className="py-32 px-6">
+      <section data-reveal id="services" className="py-32 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-center">
             Our Services
@@ -135,7 +135,7 @@ export default function Home() {
       </section>
 
       {/* Section 4: How We're Different */}
-      <section id="difference" className="py-32 px-6 bg-foreground/[0.02]">
+      <section data-reveal id="difference" className="py-32 px-6 bg-foreground/[0.02]">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-16 text-center">
             How We&apos;re Different
@@ -176,7 +176,7 @@ export default function Home() {
       </section>
 
       {/* Section 5: Our Promise */}
-      <section id="promise" className="py-32 px-6">
+      <section data-reveal id="promise" className="py-32 px-6">
         <div className="max-w-[680px] mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-8">
             Our Promise
@@ -191,7 +191,7 @@ export default function Home() {
       </section>
 
       {/* Section 6: CTA */}
-      <section className="py-32 px-6 bg-foreground/[0.02]">
+      <section data-reveal className="py-32 px-6 bg-foreground/[0.02]">
         <div className="max-w-[680px] mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
             Ready to Implement AI the Right Way?
@@ -211,7 +211,7 @@ export default function Home() {
       </section>
 
       {/* Section 7: Footer / Contact */}
-      <footer id="contact" className="py-20 px-6 border-t border-border">
+      <footer data-reveal id="contact" className="py-20 px-6 border-t border-border">
         <div className="max-w-4xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
             <div>
@@ -286,7 +286,7 @@ function ServiceCard({
   outcome: string;
 }) {
   return (
-    <div className="p-8 border border-border rounded-lg bg-background hover:border-accent/50 transition-colors">
+    <div data-reveal className="p-8 border border-border rounded-lg bg-background hover:border-accent/50 transition-colors">
       <h3 className="text-xl font-semibold mb-3">{title}</h3>
       <p className="text-secondary mb-4">{description}</p>
       <ul className="space-y-2 mb-6">

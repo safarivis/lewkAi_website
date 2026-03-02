@@ -6,9 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "design:sync": "node scripts/design-sync/sync-runner.mjs",
+    "design:watch": "node scripts/design-sync/watch-design.mjs"
   },
   "dependencies": {
+    "gsap": "^3.14.2",
+    "lenis": "^1.3.17",
     "next": "16.1.6",
     "react": "19.2.3",
     "react-dom": "19.2.3",
