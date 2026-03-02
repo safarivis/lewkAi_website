@@ -2,80 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0; url=/theme-preview" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LewkAI Theme Preview</title>
+    <title>Redirecting to Theme Preview</title>
     <style>
-      :root {
-        --background: #fafafa;
-        --foreground: #1a1a1a;
-        --accent: #1a56db;
-        --secondary: #6b7280;
-        --border: #e5e7eb;
-      }
-      @media (prefers-color-scheme: dark) {
-        :root {
-          --background: #0a0a0a;
-          --foreground: #fafafa;
-          --accent: #3b82f6;
-          --secondary: #9ca3af;
-          --border: #27272a;
-        }
-      }
-      * { box-sizing: border-box; }
       body {
         margin: 0;
         font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-        background: var(--background);
-        color: var(--foreground);
+        display: grid;
+        min-height: 100vh;
+        place-items: center;
       }
-      .wrap { max-width: 1000px; margin: 0 auto; padding: 32px 20px; }
-      .muted { color: var(--secondary); }
-      .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
-      .card { border: 1px solid var(--border); border-radius: 14px; padding: 16px; background: var(--background); }
-      .swatch { height: 70px; border-radius: 10px; border: 1px solid var(--border); }
-      .btns { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 10px; }
-      .btn { border-radius: 12px; padding: 11px 16px; font-weight: 600; border: 1px solid var(--border); background: transparent; color: var(--foreground); }
-      .btn-primary { background: var(--accent); color: #fff; border-color: var(--accent); }
-      input, textarea {
-        width: 100%;
-        border: 1px solid var(--border);
-        background: var(--background);
-        color: var(--foreground);
-        border-radius: 10px;
-        padding: 10px 12px;
-        margin-top: 6px;
-      }
-      h1 { margin: 0 0 8px; }
-      h2 { margin: 24px 0 12px; }
+      a { color: #1a56db; }
     </style>
   </head>
   <body>
-    <div class="wrap">
-      <h1>LewkAI Theme Preview</h1>
-      <p class="muted">Simple test page for colors, buttons, cards, and form fields.</p>
-
-      <h2>Colors</h2>
-      <div class="grid">
-        <div class="card"><div class="swatch" style="background: var(--background)"></div><p>background</p></div>
-        <div class="card"><div class="swatch" style="background: var(--foreground)"></div><p>foreground</p></div>
-        <div class="card"><div class="swatch" style="background: var(--accent)"></div><p>accent</p></div>
-        <div class="card"><div class="swatch" style="background: var(--secondary)"></div><p>secondary</p></div>
-        <div class="card"><div class="swatch" style="background: var(--border)"></div><p>border</p></div>
-      </div>
-
-      <h2>Buttons</h2>
-      <div class="btns">
-        <button class="btn btn-primary">Primary</button>
-        <button class="btn">Secondary</button>
-      </div>
-
-      <h2>Card + Form</h2>
-      <div class="card">
-        <p class="muted">This is the default card style.</p>
-        <label>Name<input placeholder="Your name" /></label>
-        <label>Email<input placeholder="you@company.com" /></label>
-        <label>Message<textarea rows="4" placeholder="Tell us what you need"></textarea></label>
-      </div>
-    </div>
+    <p>
+      Theme preview moved to <a href="/theme-preview">/theme-preview</a>.
+    </p>
   </body>
 </html>

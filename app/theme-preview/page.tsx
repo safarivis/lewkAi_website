@@ -1,23 +1,26 @@
 export default function ThemePreviewPage() {
   return (
     <main className="min-h-screen bg-background text-foreground">
-      <section className="border-b border-border bg-foreground/[0.02] px-6 py-16">
+      <div className="fixed left-0 top-0 z-[80] h-1 w-full bg-border/40">
+        <div data-scroll-progress className="ff-pulse-line h-full w-full bg-accent" />
+      </div>
+
+      <section data-hero data-reveal className="border-b border-border bg-foreground/[0.02] px-6 py-16">
         <div className="mx-auto max-w-5xl">
-          <p className="mb-3 text-sm uppercase tracking-[0.2em] text-secondary">LewkAI Theme</p>
+          <p className="ff-fade-up mb-3 text-sm uppercase tracking-[0.2em] text-secondary">LewkAI Theme</p>
           <h1
-            className="text-4xl font-bold tracking-tight md:text-6xl"
+            className="ff-fade-up ff-delay-1 text-4xl font-bold tracking-tight md:text-6xl"
             style={{ fontFamily: "var(--font-space-grotesk)" }}
           >
             Website Theme Preview
           </h1>
-          <p className="mt-6 max-w-2xl text-lg text-secondary">
-            This page previews the canonical LewkAI website theme: typography, colors, buttons,
-            cards, and form styling.
+          <p className="ff-fade-up ff-delay-2 mt-6 max-w-2xl text-lg text-secondary">
+            KISS motion preview: soft entrance, subtle card movement, and smooth scrolling.
           </p>
         </div>
       </section>
 
-      <section className="px-6 py-12">
+      <section data-reveal className="px-6 py-12">
         <div className="mx-auto max-w-5xl">
           <h2 className="mb-6 text-2xl font-semibold">Color Tokens</h2>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
@@ -30,7 +33,7 @@ export default function ThemePreviewPage() {
         </div>
       </section>
 
-      <section className="border-y border-border bg-foreground/[0.02] px-6 py-12">
+      <section data-reveal className="border-y border-border bg-foreground/[0.02] px-6 py-12">
         <div className="mx-auto max-w-5xl">
           <h2 className="mb-6 text-2xl font-semibold">Buttons</h2>
           <div className="flex flex-wrap items-center gap-4">
@@ -47,20 +50,35 @@ export default function ThemePreviewPage() {
         </div>
       </section>
 
-      <section className="px-6 py-12">
+      <section data-reveal className="px-6 py-12">
         <div className="mx-auto grid max-w-5xl gap-6 md:grid-cols-2">
-          <ThemeCard
-            title="Minimal, Premium, Calm"
-            body="The UI keeps contrast strong and layout quiet. Accent color is intentional, not noisy."
-          />
-          <ThemeCard
-            title="Readable by Default"
-            body="Outfit for body copy and Space Grotesk for key headings. Clear hierarchy, simple spacing."
-          />
+          <div data-parallax>
+            <ThemeCard
+              title="Minimal, Premium, Calm"
+              body="The UI keeps contrast strong and layout quiet. Accent color is intentional, not noisy."
+            />
+          </div>
+          <div data-parallax>
+            <ThemeCard
+              title="Readable by Default"
+              body="Outfit for body copy and Space Grotesk for key headings. Clear hierarchy, simple spacing."
+            />
+          </div>
         </div>
       </section>
 
-      <section className="border-t border-border px-6 py-12">
+      <section className="px-6 py-24">
+        <div data-pin className="mx-auto max-w-5xl rounded-2xl border border-border bg-foreground/[0.03] p-8">
+          <p className="text-sm uppercase tracking-[0.18em] text-secondary">Pinned Scroll Demo</p>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight">This block pins while you scroll</h2>
+          <p className="mt-4 max-w-2xl text-secondary">
+            This simulates the richer, guided motion from the video. It is intentionally stronger
+            than the normal site motion so you can validate the interaction style.
+          </p>
+        </div>
+      </section>
+
+      <section data-reveal className="border-t border-border px-6 py-12">
         <div className="mx-auto max-w-5xl">
           <h2 className="mb-6 text-2xl font-semibold">Form Preview</h2>
           <form className="grid gap-4 rounded-2xl border border-border bg-background p-6 md:grid-cols-2">
@@ -93,6 +111,8 @@ export default function ThemePreviewPage() {
           </form>
         </div>
       </section>
+
+      <div className="h-[35vh]" />
     </main>
   );
 }
@@ -116,7 +136,7 @@ function Swatch({
 
 function ThemeCard({ title, body }: { title: string; body: string }) {
   return (
-    <article className="rounded-2xl border border-border bg-background p-6">
+    <article className="ff-fade-up ff-delay-3 rounded-2xl border border-border bg-background p-6 transition-transform duration-300 hover:-translate-y-1">
       <h3 className="mb-3 text-xl font-semibold">{title}</h3>
       <p className="text-secondary">{body}</p>
     </article>

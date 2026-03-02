@@ -41,3 +41,39 @@ body {
   background: var(--accent);
   color: white;
 }
+
+/* KISS motion helpers for previews */
+@keyframes ff-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ff-pulse-line {
+  0%, 100% { opacity: 0.45; }
+  50% { opacity: 1; }
+}
+
+.ff-fade-up {
+  animation: ff-fade-up 650ms ease-out both;
+}
+
+.ff-delay-1 { animation-delay: 120ms; }
+.ff-delay-2 { animation-delay: 220ms; }
+.ff-delay-3 { animation-delay: 320ms; }
+
+.ff-pulse-line {
+  animation: ff-pulse-line 1800ms ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ff-fade-up,
+  .ff-pulse-line {
+    animation: none !important;
+  }
+}
