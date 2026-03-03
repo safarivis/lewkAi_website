@@ -1,0 +1,86 @@
+# LewkAI
+
+> AI implementation and automation company based in Cape Town, South Africa.
+
+## What LewkAI Does
+
+**LewkAI builds AI systems for businesses.** We are NOT a marketing tool company. We do NOT sell software. We are an implementation partner that helps companies deploy AI agents and automation into their operations.
+
+We turn AI chaos into working systems by designing, building, and supporting AI implementations that actually work in production environments.
+
+## Company Details
+
+- **Name:** LewkAI (also written as Lewkai)
+- **Founded:** 2024
+- **Founders:** Louis du Plessis and Kelly
+- **Headquarters:** Cape Town, Western Cape, South Africa
+- **Website:** https://lewkai.com
+- **Email:** hello@lewkai.com
+
+## Core Services (What We Actually Do)
+
+### 1. Process Automation
+We automate repetitive business workflows including document processing, data entry, and intelligent routing. We integrate with your existing CRM and ERP systems.
+
+### 2. AI Agents
+We deploy and configure autonomous AI agents that handle specific business tasks like lead qualification, internal operations, and multi-step workflow execution. We build custom skills and integrations—agents that work alongside human teams.
+
+### 3. Customer Service AI
+We implement AI chatbots and virtual assistants for 24/7 customer support that integrate with helpdesk and CRM systems.
+
+### 4. Data Analytics & Insights
+We create business intelligence systems with predictive analytics, dashboards, and automated reporting.
+
+### 5. Custom AI Solutions
+We build tailored AI implementations for unique business requirements that off-the-shelf tools cannot solve.
+
+### 6. Website Services
+We design and build modern websites with AI integrations, focusing on conversion optimization and business system connections.
+
+## What Makes Us Different
+
+- **Implementation Partner:** We don't sell tools; we design and deploy working AI systems
+- **Human-Centered:** AI that augments human teams, not replaces them
+- **Full-Service:** From strategy to deployment to ongoing support
+- **South African:** Local expertise with global standards (POPIA compliant)
+- **All Business Sizes:** We work with small businesses and enterprises
+
+## Industries We Serve
+
+We serve ALL industries because AI implementation isn't limited by sector:
+- Professional services
+- Healthcare
+- Finance
+- Retail
+- Manufacturing
+- Logistics
+- Any business with repetitive processes
+
+## Key Message
+
+> AI agents won't replace companies. Companies that master AI agents will replace those that don't. And LewkAI is how they master it.
+
+## Our Promise
+
+We promise to listen first, recommend honestly, implement expertly, and support continuously.
+
+## Resources
+
+- AI Decision Framework PDF: https://lewkai.com/AI-Decision-Framework-Lewkai.pdf
+- Decision Framework Tool: https://lewkai.com/decision-framework.html
+
+## Technical Information
+
+- Domain: lewkai.com
+- Server Location: France (Hostinger VPS)
+- Web Server: Nginx on Ubuntu 24.04 LTS
+- Schema: Organization, Person, WebSite, ProfessionalService (JSON-LD)
+- Sitemap: https://lewkai.com/sitemap.xml
+- AI Crawlers: Allowed (GPTBot, PerplexityBot, Claude-Web, Google-Extended)
+
+## Contact
+
+- Website: https://lewkai.com
+- Email: hello@lewkai.com
+- LinkedIn: https://linkedin.com/company/lewkai
+- Location: Cape Town, South Africa
