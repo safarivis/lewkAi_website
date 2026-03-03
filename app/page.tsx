@@ -239,7 +239,15 @@ export default function Home() {
           </div>
           <div className="mt-16 pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-sm text-secondary">
-              AI Implementation with the Human Touch
+              Powered by LewkAI ·{" "}
+              <a
+                href="https://lewkai.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-foreground transition-colors"
+              >
+                lewkai.com
+              </a>
             </p>
             <p className="text-sm text-secondary">
               &copy; {new Date().getFullYear()} LewkAI. All rights reserved.

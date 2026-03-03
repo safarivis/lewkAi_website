@@ -7,6 +7,9 @@ export default function ThemePreviewPage() {
 
       <section data-hero data-reveal className="border-b border-border bg-foreground/[0.02] px-6 py-16">
         <div className="mx-auto max-w-5xl">
+          <div className="ff-fade-up mb-6">
+            <LogoMark />
+          </div>
           <p className="ff-fade-up mb-3 text-sm uppercase tracking-[0.2em] text-secondary">LewkAI Theme</p>
           <h1
             className="ff-fade-up ff-delay-1 text-4xl font-bold tracking-tight md:text-6xl"
@@ -112,7 +115,22 @@ export default function ThemePreviewPage() {
         </div>
       </section>
 
-      <div className="h-[35vh]" />
+      <footer className="border-t border-border px-6 py-10">
+        <div className="mx-auto flex max-w-5xl flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
+          <LogoMark />
+          <p className="text-sm text-secondary">
+            Powered by LewkAI ·{" "}
+            <a
+              href="https://lewkai.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-foreground transition-colors"
+            >
+              lewkai.com
+            </a>
+          </p>
+        </div>
+      </footer>
     </main>
   );
 }
@@ -140,5 +158,25 @@ function ThemeCard({ title, body }: { title: string; body: string }) {
       <h3 className="mb-3 text-xl font-semibold">{title}</h3>
       <p className="text-secondary">{body}</p>
     </article>
+  );
+}
+
+function LogoMark() {
+  return (
+    <span className="inline-flex items-center gap-2.5">
+      <svg width="30" height="30" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="themePreviewLogoGradient" x1="0" y1="0" x2="100" y2="100" gradientUnits="userSpaceOnUse">
+            <stop offset="0%" stopColor="#00ff88" />
+            <stop offset="100%" stopColor="#00ccff" />
+          </linearGradient>
+        </defs>
+        <rect width="100" height="100" rx="17" fill="url(#themePreviewLogoGradient)" />
+        <circle cx="76" cy="24" r="15" fill="var(--background)" />
+      </svg>
+      <span className="text-2xl font-bold tracking-tight" style={{ fontFamily: "var(--font-space-grotesk)" }}>
+        LewkAI
+      </span>
+    </span>
   );
 }
