@@ -9,16 +9,20 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy to VPS
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: 72.62.235.141
-          username: ubuntu
-          key: ${{ secrets.VPS_SSH_KEY }}
-          script: |
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -H 72.62.235.141 >> ~/.ssh/known_hosts
+
+      - name: Deploy
+        run: |
+          ssh -i ~/.ssh/deploy_key ubuntu@72.62.235.141 '
             cd /var/www/lewkai.com
             git pull origin main
             npm install --production=false
             npm run build
             sudo pm2 restart lewkai
             echo "Deployment complete!"
+          '
