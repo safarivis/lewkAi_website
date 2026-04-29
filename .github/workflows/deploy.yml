@@ -20,6 +20,7 @@ jobs:
         run: |
           ssh -i ~/.ssh/deploy_key ubuntu@72.62.235.141 '
             cd /var/www/lewkai.com
+            sudo chown -R ubuntu:ubuntu .
             git pull origin main
             npm install --production=false
             npm run build
